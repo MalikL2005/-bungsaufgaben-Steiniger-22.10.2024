@@ -6,11 +6,11 @@ int string_to_int(char c){
 	return ret; 
 }
 
-void main(){
-	int sum = 0; 
+void quersumme_via_string_conversion(){
 	int current;
+	int sum = 0; 
 	while(1){
-		printf("give a number; 0 breaks\n");
+		printf("give a number; 0 breaks; str-conversion\n");
 		scanf("%d", &current);
 		if (current == 0){break;}
 		//convert int to str using sprinf
@@ -25,4 +25,25 @@ void main(){
 		printf("%d\n", sum);
 	}
 	printf("\nBye bye...");
+}
+
+void quersumme_via_modulo_operator(){
+	int current;
+	int sum = 0; 
+	while(1){
+		printf("give a number; 0 breaks; Modulo-operator\n");
+		scanf("%d", &current);
+		if (current == 0){break;}
+		int sum = 0; 
+		while(current>0){
+			sum += current % 10;
+			current /= 10; 
+		}
+		printf("%d\n", sum);
+	}
+}
+
+void main(){
+	quersumme_via_string_conversion();
+	quersumme_via_modulo_operator();
 }
