@@ -5,7 +5,7 @@ int string_to_int(char c){
 	int ret = c - 48; // 48 because ASCII "0" is 48, "1" is 49, ...
 	return ret; 
 }
-
+//Test
 void quersumme_via_string_conversion(){
 	int current;
 	int sum = 0; 
