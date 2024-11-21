@@ -8,7 +8,7 @@ float wurzel_via_heron(float num){
         save = start;
         start = (start +(num/start))/2;
         // printf("%f\n", start);
-    } while(fabs(start - save) > 0.000001);
+    } while(fabs(start - save) > 0.000001); // Credit geht an Semi  
     return start;
 }
 
