@@ -34,13 +34,13 @@ void main(){
               case 7:
                   for (int i=1; i<=zahl1; i++){
                       for (int j=1; j<=zahl2; j++){
-                        printf("%d\t", i*j);
-                    }
-                    printf("\n");
-                    }
+                          printf("%d\t", i*j);
+                      }
+                      printf("\n");
+                  }
                   break;
               case 8: 
-		              if (zahl1 <= 0){continue;}
+                  if (zahl1 <= 0){continue;}
                   float wurzel = wurzel_via_heron(zahl1);
                   printf("%f\n", wurzel);
                   break;
@@ -48,3 +48,4 @@ void main(){
         }
     } while(beenden == 0);
 }
+
