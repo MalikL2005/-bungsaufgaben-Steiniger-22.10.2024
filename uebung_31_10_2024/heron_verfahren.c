@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <math.h>
 
 float wurzel_via_heron(float num){
     float start = num;
@@ -8,7 +8,7 @@ float wurzel_via_heron(float num){
         save = start;
         start = (start +(num/start))/2;
         // printf("%f\n", start);
-    } while(save != start);
+    } while(fabs(start - save) > 0.000001);
     return start;
 }
 
